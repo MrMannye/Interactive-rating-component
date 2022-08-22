@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="card">
+        <div class="top__card">
+            <div class="icon__star">
+                <img src="/assets/images/icon-star.svg" alt="Icon Star">
+            </div>
+            <div class="text__information">
+                <h1 class="text__title">{{ title }}</h1>
+                <p class="text__description">{{ description }}</p>
+            </div>
+        </div>
+        <div class="bottom__card">
+            <div class="bottom__stars" *ngFor="let star of stars; index as i">
+                <p [ngClass]="option === i ? 'active' : ''" (click)="getIndex(i)">{{ star }}</p>
+            </div>
+        </div>
+        <a [routerLink]="['/message', option+1]" class="bottom__button">Submit</a>
+    </div>
+</div>

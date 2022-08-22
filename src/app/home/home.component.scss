@@ -1,0 +1,104 @@
+// VARIABLES    
+@import url('https://fonts.google.com/specimen/Overpass');    
+    
+    $primary-color: hsl(25, 97%, 53%); 
+    $neutral-white: hsl(0, 0%, 100%); 
+    $neutral-ligth-gray: hsl(217, 12%, 63%);
+    $neutral-medium-gray: hsl(216, 12%, 54%); 
+    $neutral-dark-blue: hsl(213, 19%, 18%); 
+    $neutral-very-dark-blue: hsl(216, 12%, 8%); 
+    $neutral-very-dark: hsl(216, 12%, 15%); 
+
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background-color: $neutral-very-dark-blue;
+}
+
+.card{
+    background-color: $neutral-dark-blue;
+    width: 330px;
+    border-radius: 15px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.top__card{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    *{
+        margin-top: 0.4rem;
+        margin-bottom: 0.4rem;
+    }
+}
+
+.icon__star{
+    padding: 0.5rem 0.9rem;
+    background-color: $neutral-very-dark;
+    border-radius: 999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text__information{
+    font-family: 'Overpass', sans-serif;
+    margin-left: 5px;
+    color: $neutral-white;
+    font-weight: 400;
+    font-size: 14px;
+
+    .text__description{
+        color: $neutral-ligth-gray;
+        margin-top: 15px;
+        line-height: 1.5rem;
+        font-size: 16px;
+        padding-right: 10px;
+    }
+}
+
+.bottom__card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.bottom__stars{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    p{
+        padding: 0.8rem 1.2rem; 
+        border-radius: 999px;
+        color: $neutral-ligth-gray;
+        background-color: $neutral-very-dark;
+    }
+    .active{
+        background-color: $primary-color;
+        color: $neutral-white;
+    }
+}
+
+.bottom__button{
+    padding: 15px;
+    background-color: $primary-color;
+    border-radius: 30px;
+    margin-top: 1.2rem;
+    color: $neutral-white;
+    font-size: 16px;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    text-align: center;
+}
